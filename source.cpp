@@ -15,7 +15,11 @@ int main()
 	{
 		filesystem::path entryPath = entry.path();
 		cout << entryPath.string() << endl;
+
+
 	}
+
+	//Testing out commits
 	
 
 
