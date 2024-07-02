@@ -1,25 +1,18 @@
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <filesystem>
+#include "rectanglePractice.h"
+
 
 using namespace std;
 
 int main()
 {
-	filesystem::path myCWD;
+	
+	Rectangle box;
 
-	myCWD = filesystem::current_path();
-
-	for (const auto& entry : filesystem::directory_iterator(myCWD))
-	{
-		filesystem::path entryPath = entry.path();
-		cout << entryPath.string() << endl;
-
-
-	}
-
-	//Testing out commits
+	box.setWidth(10);
+	box.setLength(100);
+	box.displayDimensions();
 	
 
 
